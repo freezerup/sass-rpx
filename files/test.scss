@@ -1,0 +1,24 @@
+@import "../base/icon.scss";
+
+view {
+  background: $c_bg_commom;
+  view {
+    color: red;
+    font-size: 14px;
+  }
+  text {
+    font-size: 20px;
+  }
+}
+span {
+  font-size: 80px;
+}
+view {
+  background: $c_commom;
+}
+view {
+  font-size: 10px;
+  span {
+    color: $c_bg_commom;
+  }
+}

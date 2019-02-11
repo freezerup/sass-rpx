@@ -1,0 +1,20 @@
+{
+  "name": "sass-rpx",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "dev": "node sassToWxss.js"
+  },
+  "keywords": [
+    "oss",
+    "upload"
+  ],
+  "dependencies": {
+    "chokidar": "^2.0.4",
+    "chalk": "^2.4.2",
+    "sass": "^1.16.1",
+    "commander": "^2.16.0"
+  },
+  "license": "ISC"
+}

@@ -1,0 +1,11 @@
+view {
+  background: color;
+}
+view view {
+  color: red;
+  font-size: 12rpx;
+}
+view view text {
+  height: 100rpx;
+  width: 100%;
+}

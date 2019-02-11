@@ -1,0 +1,25 @@
+view {
+  background: red;
+}
+view view {
+  color: red;
+  font-size: 14rpx;
+}
+view text {
+  font-size: 20rpx;
+}
+
+span {
+  font-size: 80rpx;
+}
+
+view {
+  background: #fff;
+}
+
+view {
+  font-size: 10rpx;
+}
+view span {
+  color: red;
+}
