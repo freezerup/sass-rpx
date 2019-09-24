@@ -1,16 +1,30 @@
 import allData from '../../utils/data'
 
 const { garbageData, classificationData } = allData
+let timer = null
 Page({
   data: {
     lists: [],
     classificationData,
     inputKey: '',
     historyKeywords: [],
+    showContent: false,
+    currentData: {},
+    front: true,
   },
   
   onLoad: function () {
-
+    this.setAnimation()
+  },
+  setAnimation() {
+    timer = setInterval(() => {
+      this.setData({
+        front: !this.data.front
+      })
+    }, 2000)
+  },
+  onHide() {
+    timer = null
   },
   bindInput(event) {
     const { value } = event.detail
@@ -30,6 +44,22 @@ Page({
     this.setData({
       inputKey: '',
       lists: [],
+    })
+  },
+  handleShowContent(event) {
+    const { id } = event.currentTarget.dataset
+    const currentData = classificationData.filter(item => item.id === id)[0]
+    console.log(currentData)
+    currentData.requires = currentData.require.split('；')
+    this.setData({
+      showContent: true,
+      currentData,
+    })
+  },
+  handleHideContent() {
+    this.setData({
+      showContent: false,
+      currentData: {},
     })
   },
 })
