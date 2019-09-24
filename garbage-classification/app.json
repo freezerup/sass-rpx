@@ -1,7 +1,24 @@
 {
   "pages": [
-    "pages/index/index"
+    "pages/index/index",
+    "pages/flag/index"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/flag/index",
+        "text": "给我一个国旗",
+        "iconPath": "/static/flag.png",
+        "selectedIconPath": "/static/flag.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "垃圾分类",
+        "iconPath": "/static/rubbish.png",
+        "selectedIconPath": "/static/rubbish.png"
+      }
+    ]
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
