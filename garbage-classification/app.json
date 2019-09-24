@@ -1,12 +1,32 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/nationalFlag/index"
+    "pages/nationalFlag/index",
+    "pages/index/index"
   ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/nationalFlag/index",
+        "text": "喜迎国庆",
+        "iconPath": "/static/flag.png",
+        "selectedIconPath": "/static/flag.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "助力国庆",
+        "iconPath": "/static/70.png",
+        "selectedIconPath": "/static/70.png"
+      }
+    ],
+    "color": "#828282",
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#BE4C4B",
+    "borderStyle": "white"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "垃圾分类",
+    "navigationBarTitleText": "生活小助手",
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json"
