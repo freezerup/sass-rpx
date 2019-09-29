@@ -8,8 +8,8 @@
       {
         "pagePath": "pages/nationalFlag/index",
         "text": "喜迎国庆",
-        "iconPath": "/static/flag.png",
-        "selectedIconPath": "/static/flag.png"
+        "iconPath": "/static/happy.jpg",
+        "selectedIconPath": "/static/happy.jpg"
       },
       {
         "pagePath": "pages/index/index",

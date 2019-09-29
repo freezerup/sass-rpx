@@ -1,6 +1,6 @@
 
 
-const headImg = ['/static/head1.png', '/static/head3.png', '/static/head4.png']
+const headImg = ['/static/head3.png', '/static/head4.png']
 Page({
 
   /**
