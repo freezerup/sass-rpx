@@ -1,0 +1,30 @@
+<view class="flag-container">
+  <image class="flag-bg" src="cloud://prod-ib982.7072-prod-ib982-1300531468/bg.png" mode="aspectFill" lazy-load="true" />
+  <view class="logo">
+    <image class="logo2" src="cloud://prod-ib982.7072-prod-ib982-1300531468/logo2.png" mode="widthFix" lazy-load="true" />
+    <image class="logo3" src="cloud://prod-ib982.7072-prod-ib982-1300531468/logo3.png" mode="widthFix" lazy-load="true" />
+  </view>
+  <view class="section">
+    <image class="left btn" bindtap="handleLeft" src="cloud://prod-ib982.7072-prod-ib982-1300531468/btn.png" mode="widthFix" lazy-load="true" />
+    <view class="content">
+      <image class="head" src="{{headImg[headIndex]}}" mode="widthFix" lazy-load="true" />
+      <image wx:if="{{avatarUrl}}" class="avatar" src="{{avatarUrl}}" mode="aspectFill" lazy-load="true" />
+      <view wx:else class="content-bg">
+        <image class="wx-login" src="cloud://prod-ib982.7072-prod-ib982-1300531468/wx_login.png" mode="widthFix" lazy-load="true" />
+        <view class="des">点击获取微信头像</view>
+      </view>
+      <button class="login-button" open-type="getUserInfo" bindgetuserinfo="getUserInfo">确认加入</button>
+    </view>
+    <image class="right btn" bindtap="handleRight" src="cloud://prod-ib982.7072-prod-ib982-1300531468/btn.png" mode="widthFix" lazy-load="true" />
+  </view>
+  <view class="save" bindtap="handleSavePhoto">保存头像</view>
+    
+  <view bindtap="handleChooseImg" class="camera">
+    <image src="cloud://prod-ib982.7072-prod-ib982-1300531468/camera.png" mode="widthFix" lazy-load="true" />
+  </view>
+</view>
+
+<view class="model" wx:if="{{showCanvas}}">
+  <canvas canvas-id='myCanvas' class="canvas" style='height: {{systemWidth}}px;width: {{systemWidth}}px'></canvas>
+</view>
+  
